@@ -23,19 +23,22 @@
 ///////////////////////////////////////////////////////////////////////
 // CHECK A LIST // 
 
-function checkForStudent(studentName, studentArray){
-    const studentIncluded = studentArray.find(element => element === studentName);
-    if (studentIncluded === undefined) {
-        console.log('absent')
-    }
-    // return studentIncluded
-}
-console.log(checkForStudent('Sal', ['Arifa', 'Siara', 'John', 'Miguel']));
-
+// function checkForStudent(studentName, studentArray){
+//     const presentStudents = studentArray.find(element => element === studentName) 
+//     if (!presentStudents) {
+//         console.log('false')
+//     }
+// }
+//     console.log(checkForStudent('Sal', ['Arifa', 'Siara', 'John', 'Miguel']));
+ 
+   
 ///////////////////////////////////////////////////////////////////////
 // SUM ARRAY //
 
+const array = [1, 2, 3, 4, 5, 6];
+let sum = 0;
+for (let i = 0; i < array.length; i++) {
+    sum += array[1];
+}
 
-
-
-
+console.log(sum);
