@@ -1,3 +1,5 @@
+// VERBAL QUESTIONS // 
+
 // The parameters are the names listed in 
 // the function's definition, while the 
 // arguments are the actual values in the
@@ -8,23 +10,32 @@
 // log the function.
 
 ///////////////////////////////////////////////////////////////////////
+// PALINDROME // 
 
-function checkPalindrome(string) {
-  const lowercaseString = string.toLowerCase();
-  const reversedString = lowercaseString.split('').reverse().join('');
-  console.log(reversedString)
+// function checkPalindrome(string) {
+//   const lowercaseString = string.toLowerCase();
+//   const reversedString = lowercaseString.split('').reverse().join('');
+//   console.log(reversedString);
+//   return lowercaseString === reversedString
+// }
+// console.log(checkPalindrome('raDaR'));
 
-  // Compare the lowercase string w/ the reversed string
-  return lowercaseString === reversedString
+///////////////////////////////////////////////////////////////////////
+// CHECK A LIST // 
+
+function checkForStudent(studentName, studentArray){
+    const studentIncluded = studentArray.find(element => element === studentName);
+    if (studentIncluded === undefined) {
+        console.log('absent')
+    }
+    // return studentIncluded
 }
+console.log(checkForStudent('Sal', ['Arifa', 'Siara', 'John', 'Miguel']));
 
-console.log(checkPalindrome('raDaR'));
+///////////////////////////////////////////////////////////////////////
+// SUM ARRAY //
 
-const wordIsPalindrome = 
 
-function checkPalindrome(Radar){
-    if (wordIsPalindrome) {
-console.log()
-    } 
-}
+
+
 
